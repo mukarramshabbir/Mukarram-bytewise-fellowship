@@ -19,4 +19,7 @@ main() {
   int x = 101;
   var res = x % 2 == 0 ? 'Even' : 'Odd';
   print(res);
+
+  var numb = [1, 2, 3];
+  numb.forEach((element) => print(element));
 }
