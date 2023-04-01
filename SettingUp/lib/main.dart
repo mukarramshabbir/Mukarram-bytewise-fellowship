@@ -13,7 +13,28 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Lottery App'),
         ),
-          body: Text('Welcome Backsdfsvvdssdf')
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Center(
+              child: Container(
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(90),
+                    bottomLeft: Radius.circular(90),
+                    topLeft: Radius.circular(20),
+                    bottomRight: Radius.circular(20),
+                  )
+                ),
+                  child:Center(child: Text('Container 1')),
+              )
+              )
+            ],
+          )
       ),
     );
   }
