@@ -9,20 +9,56 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('Lottery App'),
-          ),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+      home: SideMenu(),
 
-            ],
-          )),
     );
   }
 }
+
+
+class SideMenu extends StatefulWidget {
+  const SideMenu({Key? key}) : super(key: key);
+
+  @override
+  State<SideMenu> createState() => _SideMenuState();
+}
+
+class _SideMenuState extends State<SideMenu> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: 200,
+        height: double.infinity,
+        color: Colors.black87,
+        child: SafeArea(
+          child: Column(
+            children: [
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white70,
+                  child: Icon(Icons.person,color: Colors.black87,),
+                ),
+                title: Text(
+                  'Mukarram Ali',
+                  style: TextStyle(color: Colors.white70),
+                ),
+                subtitle: Text(
+                  'App Developer',
+                    style: TextStyle(color: Colors.white70),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
 
 /*Row(
 children: [
@@ -131,4 +167,69 @@ Center(
                 )),
               )
 
+Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  style: TextStyle(fontSize: 14,color: Colors.black),
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.email),
+                    hintText: 'Email',
+                    hintStyle: TextStyle(fontSize: 14, color: Colors.red
+                    ),
+                    enabledBorder: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(),
+                  ),
+                  onChanged: (value){
+                    print(value);
+                  },
+                ),
+
+              ),
+
+              int level=0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Lottery App'),
+        centerTitle: true,
+        backgroundColor: Colors.orange,
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Expanded(
+            child: ListView.builder(
+                itemCount: 5,
+                itemBuilder: (context, index){
+                  return ListTile(
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.black,
+                      backgroundImage: NetworkImage('https://images.pexels.com/photos/3742639/pexels-photo-3742639.jpeg?auto=compress&cs=tinysrgb&w=800'),
+                    ),
+                    title: Text('Mukarram Ali'),
+                    subtitle: Text('Subscribe to channel $level'),
+                    trailing: Text('3.51pm'),
+                  );
+                }
+            ),
+          ),
+
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            level+=1;
+          });
+        },
+        child: Icon(Icons.add),
+
+        backgroundColor: Colors.orange,
+
+      ),
+    );
+  }
  */
