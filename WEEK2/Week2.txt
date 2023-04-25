@@ -1,0 +1,1 @@
+This week was our onboarding week. We just got the guidelines that how the fellowship will go. Got tutorials to install the flutter and android studio and create our first app.
