@@ -34,8 +34,8 @@ class _ScreenTwoState extends State<ScreenTwo> {
               onTap: (){
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => ScreenThree(
-                      name: 'Tasmia',
-                      num: 2,
+                      name: 'Mukarram Page',
+                      num: 3,
                     ))
                 );
               },

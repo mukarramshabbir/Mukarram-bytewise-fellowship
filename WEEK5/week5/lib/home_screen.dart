@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text('Mukarram App')
+        title: Text('Mukarram App 1')
 
       ),
       body: Padding(
@@ -30,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: (){
                 Navigator.pushNamed(context, ScreenTwo.id
                 ,arguments: {
-                  'name':'Asif Taj',
-                      'age':21
+                  'name':'Mukarram Page',
+                      'age':2
                     });
                 // Navigator.push(context,
                 // MaterialPageRoute(builder: (context) => ScreenTwo(
