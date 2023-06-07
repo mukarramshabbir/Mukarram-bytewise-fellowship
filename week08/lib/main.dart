@@ -1,35 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:week08/home_screen.dart';
-
-//final nameProvider= Provider<String>((ref) {
-//  return 'Mukarram';
-//});
-
-final nameProvider= StateProvider<String?>((ref) {
-  return null;
-});
-
-
+import 'package:week08/realtime_edge_detection_screen.dart';
 
 void main() {
-  runApp(
-    const ProviderScope(
-      child: MyApp(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Riverpod Tutorial',
-      home: MyHomePage(),
+    return MaterialApp(
+      title: 'Edge Scanner App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: RealtimeEdgeDetectionScreen(),
     );
   }
 }
-
