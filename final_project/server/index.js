@@ -11,6 +11,7 @@ const DB="mongodb+srv://mukarramali623:sTvrX7wRalouZfF9@cluster0.b0lgca8.mongodb
 
 //middleware
 // client -> middleware -> server -> client
+app.use(express.json());
 app.use(authRouter);
 
 // conections
