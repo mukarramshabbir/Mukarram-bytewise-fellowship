@@ -1,0 +1,4 @@
+1 : the splash screen 
+2 : then we move to camera screen in which user capture image the edges of a image is auto detected and the resultant image is captured.
+3 : Document save screen, then we navigate to document save screen in which the auto edges detected image is preview then there is a save document button to save a document.
+4 : Preview PDF screen, in which user have a preview of the PDF which contain the documents that we have user also have a share button to share PDF and also have a option to save it in phone.

@@ -5,7 +5,7 @@ const userSchema= mongoose.Schema({
         required: true,
         type: String,
         trim: true,
-    }
+    },
     email: {
         required: true,
         type: String,
@@ -17,7 +17,7 @@ const userSchema= mongoose.Schema({
             },
             message: 'Please enter a valid email address',
         }
-    }
+    },
     password: {
         required: true,
         type: String,
@@ -27,15 +27,15 @@ const userSchema= mongoose.Schema({
             },
             message: 'Please enter a long password',
         }
-    }
+    },
     address: {
         type: String,
         default: '',
-    }
+    },
     type: {
         type: String,
         default: 'user',
-    }
+    },
 });
 
 const User= mongoose.model('user',userSchema);

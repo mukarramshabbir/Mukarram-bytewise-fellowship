@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4aa00977-8324-4194-a6d2-8c194837de79" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../final_project/lib/constants/global_variables.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/lib/constants/global_variables.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/lib/features/auth/services/auth_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/lib/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/lib/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final_project/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../final_project/server/routes/auth.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2R61JkYLBteSe9wO6aLetBIfQi0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/Work/Bytewise_Fellowship/flutter_application_1",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4aa00977-8324-4194-a6d2-8c194837de79" name="Changes" comment="" />
+      <created>1686555646605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686555646605</updated>
+    </task>
+    <servers />
+  </component>
+</project>
