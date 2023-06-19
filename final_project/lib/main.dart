@@ -1,16 +1,37 @@
+import 'package:final_project/common/widgets/bottom_bar.dart';
 import 'package:final_project/constants/global_variables.dart';
 import 'package:final_project/features/auth/screens/auth_screen.dart';
+import 'package:final_project/features/auth/services/auth_service.dart';
+import 'package:final_project/providers/user_provider.dart';
 import 'package:final_project/router.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(
+      create: (context) => UserProvider(),
+    ),
+  ], child: const MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
+  final AuthService authService = AuthService();
+
+  @override
+  void initState() {
+    super.initState();
+    authService.getUserData(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +47,9 @@ class MyApp extends StatelessWidget {
                 color: Colors.black,
               ))),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: const AuthScreen(),
+      home: Provider.of<UserProvider>(context).user.token.isNotEmpty
+          ? const BottomBar()
+          : const AuthScreen(),
     );
   }
 }
